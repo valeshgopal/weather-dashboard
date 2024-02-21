@@ -1,0 +1,54 @@
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(46, 46, 56, 0.5);
+  padding: 16px;
+  gap: 16px;
+  border-radius: 40px;
+  border: 1px solid rgba(240, 240, 240, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  grid-area: weather;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  max-width: 95vw;
+}
+
+.weather-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.weather {
+  position: absolute;
+  bottom: 0;
+}
+
+.location,
+.temp,
+.humidity,
+.wind {
+  font-size: 3rem;
+}
+
+.location-box,
+.temp-box,
+.humidity-box,
+.wind-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .location,
+  .temp,
+  .humidity,
+  .wind {
+    font-size: 2rem;
+  }
+}

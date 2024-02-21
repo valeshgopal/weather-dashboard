@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  border: 0;
+  outline: 0;
+  padding: 8px 16px;
+  border-radius: 50px;
+  width: 40vw;
+}
+
+.date-format {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 540px) {
+  .date-format {
+    font-size: 12px;
+  }
+}

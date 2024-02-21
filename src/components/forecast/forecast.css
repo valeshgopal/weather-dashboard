@@ -1,0 +1,54 @@
+.container {
+  grid-area: hourlyForecast;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.forecast-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  background-color: rgba(46, 46, 56, 0.6);
+  padding: 16px;
+  border-radius: 40px;
+  border: 1px solid rgba(240, 240, 240, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  max-width: 95vw;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: rgba(30, 31, 36, 0.5);
+  border-radius: 20px;
+  padding: 0px 12px;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  margin: 8px;
+}
+
+.weather-detail {
+  position: absolute;
+  top: 50%;
+}
+
+.icon {
+  padding: 8px 0;
+}
+
+@media screen and (max-width: 840px) {
+  .forecast-box {
+    max-width: calc(100vw - 42px);
+  }
+}
